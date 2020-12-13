@@ -68,9 +68,11 @@ defmodule Blockchain.Blocks do
     end
   end
 
+  defp verify_block(block) do
 
+  end
 
-  defp verify_integrity do
+  def is_valid_blockchain do
     blocks = Repo.all(Block)
 
     Enum.map(blocks)
