@@ -68,6 +68,15 @@ defmodule Blockchain.Blocks do
     end
   end
 
+
+
+  defp verify_integrity do
+    blocks = Repo.all(Block)
+
+    Enum.map(blocks)
+  end
+
+
   @doc """
   Updates a block.
 
